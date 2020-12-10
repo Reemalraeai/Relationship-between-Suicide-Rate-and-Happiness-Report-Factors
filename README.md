@@ -9,7 +9,7 @@ Project Steps:
 -	Visualize the data
 
 Project Purpose:
-Identify the relationship between a crude suicide rate & the next six socioeconomic factors: economic production (GPD per capita), social support, life expectancy, freedom, absence of corruption, and generosity of a country. These six factors are used to measure the happiness score of a country in the World Happiness Report.
+Identify the relationship between a crude suicide rate & the happiness measures, which are the next seven  factors:happiness score, economic production (GPD per capita), social support, life expectancy, freedom, absence of corruption, and generosity of a country. These seven factors could be found in the World Happiness Report.
 
 Data Source:
 
