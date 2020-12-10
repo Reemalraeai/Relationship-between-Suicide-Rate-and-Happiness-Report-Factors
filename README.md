@@ -23,9 +23,13 @@ Suicide Rate Dataset
 Importing & Exploring:
 -	import suicide rates dataset
 -	explore the dataset
+
 o	see the first 5 rows (head())
+
 o	see the number of columns & rows (shape)
+
 o	see details about the columns (info())
+
 o	see if there is missing value(isnull().sum())
 
 Data Cleaning:
@@ -53,16 +57,23 @@ World Happiness Report Dataset
 Importing & Exploring:
 -	import world happiness report 2015 dataset
 -	explore the dataset
+
 o	see the first 5 rows (head())
+
 o	see the number of columns & rows (shape)
+
 o	see details about the columns (info())
+
 o	see if there is missing value(isnull().sum())
+
 *This process run twice, first to import & explore world happiness report dataset for 2015 and the second to import & explore world happiness report dataset for 2016
 
 Data Cleaning:
 -	remove the unnecessary columns 
 -	make the country name columns the index so we can join the datasets after
+
 *This process run twice, first to clean happiness report dataset for 2015 and the second to clean world happiness report dataset for 2016
+
 -	merge the world happiness report for 2015 dataset with suicide rate for 2015 dataset in one dataset called “suiciderate_happiness_report_2015”
 -	merge the world happiness report for 2016 dataset with suicide rate for 2016 dataset in one dataset called “suiciderate_happiness_report_2016”
 -	there are two datasets prepared for analysis, suicide rates & happiness report for 2015 dataset & suicide rates & happiness report for 2016 dataset
@@ -75,38 +86,71 @@ Data Analysis & Visualization:
 The function:
 
 def correlation(x, y, t):
+
     sns.regplot(x, y)
+    
     plt.title('Correlation between suicide rate &' + ' ' + t)
+    
     pearson_coef, p_value = stats.pearsonr(x, y)
+    
     print('The Pearson Correlation Coefficient is', pearson_coef, 'with a P-value of P =', p_value)
+    
     if 0 <= pearson_coef <= 0.19:
+    
         print('There is NO correlation')
+        
     elif 0.20 <= pearson_coef <= 0.40:
+    
         print('Weak positive correlation')
+        
     elif 0.40 <= pearson_coef <= 0.59:
+    
         print('Moderate positive correlation')
+        
     elif 0.60 <= pearson_coef <= 0.79:
+    
         print('Strong positive correlation')
+        
     elif 0.80 <= pearson_coef <= 1:
+    
         print('Very stong positive correlation')
+        
     elif -0.19 <= pearson_coef <= -0.01:
+    
         print('There is NO correlation')
+        
     elif -0.39 <= pearson_coef <= -0.20:
+    
         print('Weak negative correlation')
+        
     elif -0.59 <= pearson_coef <= -0.40:
+    
         print('Moderate negative correlation')
+        
     elif -0.79 <= pearson_coef <= -0.60:
+    
         print('Strong negative correlation')
+        
     elif -0.80 >= pearson_coef >= -1:
+    
         print('Very stong negative correlation')
+        
     if p_value <= 0.05 and 0.20 <= pearson_coef <= 1:
+    
         print('This positive correlation is significant')
+        
     elif p_value <= 0.05 and -0.20 >= pearson_coef >= -1:
+    
         print('This negative correlation is significant')
+        
     elif p_value > 0.05 and 0.20 <= pearson_coef <= 1:
+    
         print('This positive correlation is NOT significant')
+        
     elif p_value > 0.05 and -0.20 >= pearson_coef >= -1:
+    
         print('This negative correlation is NOT significant') 
+        
 
 -	create y2015 variable that presents suicide rate for 2015
 -	find the correlation between suicide rate for 2015 & each indicator of happiness report for 2015 (7 factors/indicators) correlation between suicide rate & Happiness Score 2015 using the correlation function we’ve created 
