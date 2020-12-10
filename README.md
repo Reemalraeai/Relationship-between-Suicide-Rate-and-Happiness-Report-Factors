@@ -12,12 +12,14 @@ Project Purpose:
 Identify the relationship between a crude suicide rate & the next six socioeconomic factors: economic production (GPD per capita), social support, life expectancy, freedom, absence of corruption, and generosity of a country. These six factors are used to measure the happiness score of a country in the World Happiness Report.
 
 Data Source:
+
 GDP per Capita and Suicide rates
 https://www.kaggle.com/harshav05/gdp-per-capita-and-suicide-rates 
 World Happiness Report
 https://www.kaggle.com/unsdsn/world-happiness?select=2016.csv 
 
 Suicide Rate Dataset
+
 Importing & Exploring:
 -	import suicide rates dataset
 -	explore the dataset
@@ -25,24 +27,29 @@ o	see the first 5 rows (head())
 o	see the number of columns & rows (shape)
 o	see details about the columns (info())
 o	see if there is missing value(isnull().sum())
+
 Data Cleaning:
 -	remove the unnecessary columns 
 -	make the country name columns the index so we can join the datasets after
 -	split this dataset to two datasets, one for 2015, and the other for 2016
+
 Descriptive Analysis:
 -	apply descriptive analysis on suicide rates for 2015 & 2016 to haver bigger idea about the data
 -	apply boxplot to the dataset to explore the min, max, median, & outliers for each of the datasets
 -	explore what are the top 5 countries for each year 
 
 The Results of the descriptive analysis:
+
 2015:
 -	the boxplot shows that the top 5 countries are outliers, which means that the top 5 countries have suicide rate that differ so much from the rest of the world
 -	interesting that 4 of the top 5 countries are in Europe (Kazakhstan locates in Eurasia)
+
 2016:
 -	there was a slight decline in the number of outliers (from 5 to 4), in the max rates (in 2015 the max rate was almost 35 & in 2016 the max rate was almost 32)
 -	Suriname took the 5th place, and as a result, there were 3 countries from Europe, and 2 from South America
 
 World Happiness Report Dataset
+
 Importing & Exploring:
 -	import world happiness report 2015 dataset
 -	explore the dataset
@@ -64,7 +71,9 @@ Data Analysis & Visualization:
 -	see the correlation between the variables in the suicide rate & happiness report for 2015 dataset using corr() function 
 -	create a correlation matrix using heat map
 -	create a function that will return a scatter plot with a regression line, the Pearson Correlation Coefficient, the p-value & returns if there is a correlation & if the correlation is negative or positive and if it is weak, moderate, strong, or very strong, & if it is significant or not
+
 The function:
+
 def correlation(x, y, t):
     sns.regplot(x, y)
     plt.title('Correlation between suicide rate &' + ' ' + t)
@@ -107,10 +116,13 @@ def correlation(x, y, t):
 -	find the correlation between suicide rate for 2015 & each indicator of happiness report for 2016 (7 factors/indicators) correlation between suicide rate & Happiness Score 2016 using the correlation function 
 
 Results:
+
 2015:
 -	There are weak positive correlations between suicide rate (dependent variable/ target) and Happiness Score, Economy (GDP per Capita), Family and Health (Life Expectancy) for 2015 (independent variables/ predictors) and these correlations are significant
+
 2016:
 -	as in the previous analysis, there are weak positive correlations between suicide rate (dependent variable/ target) and Happiness Score, Economy (GDP per Capita), Family and Health (Life Expectancy) for 2016 (independent variables/ predictors) and these correlations are significant
+
 Main Result:
 -	according to these analyses, we can state that a country that has a higher happiness score, higher GDP, higher family (social support), or higher Health (Life Expectancy), tends to have a higher suicide rate.
 -	As a result, we can state that the developed countries tend to have higher suicide rates
