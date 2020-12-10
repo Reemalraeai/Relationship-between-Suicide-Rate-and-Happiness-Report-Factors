@@ -90,7 +90,7 @@ Data Cleaning:
 Data Analysis & Visualization:
 -	see the correlation between the variables in the suicide rate & happiness report for 2015 dataset using corr() function 
 -	create a correlation matrix using heat map
--	create a function that will return a scatter plot with a regression line, the Pearson Correlation Coefficient, the p-value & returns if there is a correlation & if the correlation is negative or positive and if it is weak, moderate, strong, or very strong, & if it is significant or not
+-	create a function that will return a scatter plot with a regression line, the Pearson Correlation Coefficient, the p-value & returns if there is a correlation, if the correlation is negative or positive, if it is weak, moderate, strong, or very strong and if it is significant or not
 
 The function:
 
