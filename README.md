@@ -1,4 +1,4 @@
-# Relationship-between-Suicide-Rate-and-Happiness-Report-Factors-of-the-Countries
+# Relationship-between-Suicide-Rate-and-Happiness-Report-Factors/indicators
 Project Steps:
 -	Define the purpose/ problem
 -	Search for the data
@@ -164,8 +164,16 @@ Results:
 2015:
 -	There are weak positive correlations between suicide rate (dependent variable/ target) and Happiness Score, Economy (GDP per Capita), Family and Health (Life Expectancy) for 2015 (independent variables/ predictors) and these correlations are significant
 
+
+![](/images/suicide_rate_happinesss_indicators_correlation_matrix_2015.png)
+
+
 2016:
 -	as in the previous analysis, there are weak positive correlations between suicide rate (dependent variable/ target) and Happiness Score, Economy (GDP per Capita), Family and Health (Life Expectancy) for 2016 (independent variables/ predictors) and these correlations are significant
+
+
+![](/images/suicide_rate_happinesss_indicators_correlation_matrix_2016.png)
+
 
 Main Result:
 -	according to these analyses, we can state that a country that has a higher happiness score, higher GDP, higher family (social support), or higher Health (Life Expectancy), tends to have a higher suicide rate.
