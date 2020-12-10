@@ -48,9 +48,18 @@ The Results of the descriptive analysis:
 -	the boxplot shows that the top 5 countries are outliers, which means that the top 5 countries have suicide rate that differ so much from the rest of the world
 -	interesting that 4 of the top 5 countries are in Europe (Kazakhstan locates in Eurasia)
 
+![](/images/Suicide_rate_2015_boxplot.png)
+
+![](/images/Suicide_rate_2015_top5.PNG)
+
 2016:
 -	there was a slight decline in the number of outliers (from 5 to 4), in the max rates (in 2015 the max rate was almost 35 & in 2016 the max rate was almost 32)
 -	Suriname took the 5th place, and as a result, there were 3 countries from Europe, and 2 from South America
+
+![](/images/Suicide_rate_2016_boxplot.png)
+
+![](/images/Suicide_rate_2016_top5.PNG)
+
 
 World Happiness Report Dataset
 
@@ -167,6 +176,14 @@ Results:
 
 ![](/images/suicide_rate_happinesss_indicators_correlation_matrix_2015.png)
 
+![](/images/correlation_suiciderate_happinessscore_2015.PNG)
+
+![](/images/correlation_suiciderate_GDP_2015.PNG)
+
+![](/images/correlation_suiciderate_family_2015.PNG)
+
+![](/images/correlation_suiciderate_health_2015.PNG)
+
 
 2016:
 -	as in the previous analysis, there are weak positive correlations between suicide rate (dependent variable/ target) and Happiness Score, Economy (GDP per Capita), Family and Health (Life Expectancy) for 2016 (independent variables/ predictors) and these correlations are significant
@@ -174,6 +191,13 @@ Results:
 
 ![](/images/suicide_rate_happinesss_indicators_correlation_matrix_2016.png)
 
+![](/images/correlation_suiciderate_happinessscore_2016.PNG)
+
+![](/images/correlation_suiciderate_GDP_2016.PNG)
+
+![](/images/correlation_suiciderate_family_2016.PNG)
+
+![](/images/correlation_suiciderate_health_2016.PNG)
 
 Main Result:
 -	according to these analyses, we can state that a country that has a higher happiness score, higher GDP, higher family (social support), or higher Health (Life Expectancy), tends to have a higher suicide rate.
