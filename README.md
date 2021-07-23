@@ -1,4 +1,4 @@
-# Relationship-between-Suicide-Rate-and-Happiness-Report-Factors/indicators
+# Relationship between Suicide Rate and Happiness Report Factors/indicators
 Project Steps:
 -	Define the purpose/ problem
 -	Search for the data
